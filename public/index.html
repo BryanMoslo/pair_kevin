@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkbu6gPHuPwUarRUYhvx4ZM6NItv71-wc&callback=initMap&libraries=&v=weekly"
+        defer></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <h1>Seleccione un archivo aqui: </h1>
+    <div>
+        <form action="/save" method="POST">
+            <input type="file" id="archivo" name="archivo">
+            <input type="submit" value="Enviar" >
+        </form>
+    </div>
+
+    <script src="./js/polyline.js"></script>
+</body>
+
+</html>
